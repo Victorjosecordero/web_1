@@ -1,0 +1,29 @@
+body{
+    background-color:cyan ;
+}
+
+header{
+    padding: 5px;
+    background-color: rgb(199, 247, 213);
+    font-size: xx-large;
+    color: white;
+    text-align: center;
+}
+
+
+footer{
+    padding: 5%;
+    background-color: cyan;
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+}
+
+table,th,tr,td{
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid;
+    padding: 8px;
+    text-align: center;
+    background-color:aliceblue;
+}

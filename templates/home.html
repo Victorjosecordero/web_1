@@ -1,0 +1,32 @@
+
+{%extends 'base.html'%}
+
+{%block title%}Home{%endblock%}
+
+{%block content%}
+    <h1>Hola Mundo de las pantillas</h1>
+    
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>DNI</th>
+            <th>Ocupacion</th>
+            <th colspan="2">Acciones</th>
+        </tr>
+        {% for filas in datos%}
+        <tr>
+            <td>{{filas[0]}}</td>
+            <td>{{filas[1]}}</td>
+            <td>{{filas[2]}}</td>
+            <td>{{filas[3]}}</td>
+            <td>{{filas[4]}}</td>
+            <td><a href="editar/{{filas[0]}}">Editar</a></td>
+            <td><a href="eliminar/{{filas[0]}}">Eliminar</a></td>
+        </tr>
+        {%endfor%}
+    </table>
+
+    
+    {%endblock%}
